@@ -1,0 +1,15 @@
+{
+    "name": "alucardthefish/php-mvc-framework",
+    "authors": [
+        {
+            "name": "alucardthefish",
+            "email": "sergiop18@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "app\\": "./"
+        }
+    },
+    "require": {}
+}
