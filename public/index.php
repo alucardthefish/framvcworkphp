@@ -15,6 +15,10 @@ $app->router->get('/', 'home');
 
 $app->router->get('/contact', 'contact');
 
+$app->router->post('/contact', function() {
+    return 'handling submiting data';
+});
+
 $app->run();
 
 
