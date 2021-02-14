@@ -32,7 +32,6 @@ class Application {
 	public function run() {
 		
 		echo $this->router->resolve();
-		# minuto 21:41
 
 	}
 }
