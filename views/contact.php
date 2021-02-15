@@ -1,7 +1,7 @@
 <h1>Contact Us</h1>
 
 
-<form>
+<form action="" method="POST">
   <div class="mb-3">
     <label for="subjectInput" class="form-label">Subject</label>
     <input type="text" class="form-control" name="subject" id="subjectInput">
