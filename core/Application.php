@@ -18,6 +18,7 @@ class Application {
 	public $request;
 	public $response;
 	public static $app;
+	public $controller;
 	
 	public function __construct($root_path) {
 
@@ -33,6 +34,14 @@ class Application {
 		
 		echo $this->router->resolve();
 
+	}
+
+	public function setController($ctrller) {
+		$this->controller = $ctrller;
+	}
+
+	public function getController() {
+		return $this->controller;
 	}
 }
 
