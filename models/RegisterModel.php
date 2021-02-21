@@ -12,14 +12,14 @@ use app\core\Model;
 
 class RegisterModel extends Model {
 
-    public $firstname;
-    public $lastname;
-    public $email;
-    public $password;
-    public $passwordconfirm;
+    public $firstname = '';
+    public $lastname = '';
+    public $email = '';
+    public $password = '';
+    public $confirmPassword = '';
 
     public function register() {
-        
+        echo "Creating new user";
     }
 
     public function rules() {
