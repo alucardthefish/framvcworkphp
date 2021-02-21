@@ -4,17 +4,21 @@
 <form action="" method="POST">
 
     <div class="row">
-        <div class="col">
+      <div class="col">
         <div class="mb-3">
-    <label for="firstnameInput" class="form-label">Firstname</label>
-    <input type="text" class="form-control" name="firstname" id="firstnameInput">
-  </div>
+          <label for="firstnameInput" class="form-label">Firstname</label>
+          <input type="text" class="form-control<?php echo $model->hasError('firstname') ? ' is-invalid' : ''; ?>" name="firstname" value="<?php echo $model->firstname ?>" id="firstnameInput">
+          <div class="invalid-feedback">
+            <?php echo $model->getFirstError('firstname'); ?>
+          </div>
         </div>
-        <div class="col">
+      </div>
+      
+      <div class="col">
         <div class="mb-3">
-    <label for="lastnameInput" class="form-label">Lastname</label>
-    <input type="text" class="form-control" name="lastname" id="lastnameInput">
-  </div>
+          <label for="lastnameInput" class="form-label">Lastname</label>
+          <input type="text" class="form-control" name="lastname" id="lastnameInput">
+      </div>
         </div>
     </div>
 
