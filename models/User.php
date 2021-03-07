@@ -8,18 +8,35 @@
 
 namespace app\models;
 
-use app\core\Model;
+use app\core\DbModel;
 
-class RegisterModel extends Model {
+class User extends DbModel {
+
+    const STATUS_INACTIVE = 0;
+    const STATUS_ACTIVE = 1;
+    const STATUS_DELETED = 2;
 
     public $firstname = '';
     public $lastname = '';
     public $email = '';
+    public $status = self::STATUS_INACTIVE;
     public $password = '';
     public $confirmPassword = '';
 
-    public function register() {
-        echo "Creating new user";
+    public function tableName()
+    {
+        return 'users';
+    }
+
+    public function attributes()
+    {
+        return ['firstname', 'lastname', 'email', 'password', 'status'];
+    }
+
+    public function save() {
+        $this->status = self::STATUS_INACTIVE;
+        $this->password = password_hash($this->password, PASSWORD_DEFAULT);
+        return parent::save();
     }
 
     public function rules() {
