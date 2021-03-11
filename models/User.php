@@ -23,7 +23,7 @@ class User extends DbModel {
     public $password = '';
     public $confirmPassword = '';
 
-    public function tableName()
+    public static function tableName()
     {
         return 'users';
     }
@@ -60,6 +60,11 @@ class User extends DbModel {
             'password' => 'Password',
             'confirmPassword' => 'Confirm password'
         ];
+    }
+
+    public static function primaryKey()
+    {
+        return 'id';
     }
 }
 

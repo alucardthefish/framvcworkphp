@@ -6,9 +6,11 @@ namespace app\core;
 abstract class DbModel extends Model
 {
 
-    abstract public function tableName();
+    abstract public static function tableName();
 
     abstract public function attributes();
+
+    abstract public static function primaryKey();
 
     public function save() {
         $tableName = $this->tableName();
@@ -30,7 +32,7 @@ abstract class DbModel extends Model
         return Application::$app->db->pdo->prepare($sql);
     }
 
-    public function findOne($where) {
+    public static function findOne($where) {
         $tableName = static::tableName();
         $attributes = array_keys($where);
         $sql = implode("AND ", array_map(fn($attr) => "$attr = :$attr", $attributes));
