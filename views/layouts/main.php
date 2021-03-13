@@ -50,7 +50,11 @@ use app\core\Application;
                     <a href="/profile" class="nav-link">Profile</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="/logout">Welcome<?php echo Application::$app->user->getDisplayName() ?>(Logout)</a>
+                    <?php if (Application::$app->user): ?>
+                        <a class="nav-link" href="/logout">Welcome <?php echo Application::$app->user->getDisplayName() ?>(Logout)</a>
+                    <?php else: ?>
+                        <a class="nav-link" href="/logout">Welcome <?php echo 'Null User' ?>(Logout)</a>
+                    <?php endif; ?>
                     </li>
                 </ul>
                 <?php endif; ?>
