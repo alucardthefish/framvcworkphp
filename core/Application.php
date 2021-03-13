@@ -17,6 +17,7 @@ class Application {
 	public $layout = 'main';
 	public $userClass;
 	public $router;
+	public $view;
 	public $request;
 	public $response;
 	public $session;
@@ -34,6 +35,7 @@ class Application {
 		$this->response = new Response();
 		$this->session = new Session();
 		$this->router = new Router($this->request, $this->response);
+		$this->view = new View();
 
 		$this->db = new Database($config['db']);
 
