@@ -12,9 +12,15 @@ use app\core\Application;
 use app\core\Controller;
 use app\models\LoginForm;
 use app\models\User;
+use app\core\middlewares\AuthMiddleware;
 
 class AuthController extends Controller
 {
+
+    public function __construct() {
+        $this->registerMiddleware(new AuthMiddleware(['profile']));
+    }
+
     public function login($request, $response) {
         $loginForm = new LoginForm();
         if ($request->isPost()) {
