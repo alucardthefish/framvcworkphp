@@ -14,6 +14,7 @@ class Application {
 	#public Router $router;
 	public static $ROOT_DIR;
 
+	public $layout = 'main';
 	public $userClass;
 	public $router;
 	public $request;
