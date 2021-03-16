@@ -6,8 +6,9 @@
 # Description: Class that will be in charge of handle database connection 
 # **************************************************************************** 
 
-namespace app\core;
+namespace app\core\db;
 
+use app\core\Application;
 use PDO;
 
 class Database

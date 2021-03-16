@@ -8,6 +8,7 @@
 
 namespace app\core;
 
+use app\core\db\Database;
 
 class Application {
 
