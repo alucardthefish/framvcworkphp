@@ -2,9 +2,9 @@
 
 namespace app\controllers;
 
-use app\core\Application;
-use app\core\Request;
-use app\core\Controller;
+use alucardthefish\framvcwork\Application;
+use alucardthefish\framvcwork\Request;
+use alucardthefish\framvcwork\Controller;
 use app\models\ContactForm;
 
 class SiteController extends Controller {

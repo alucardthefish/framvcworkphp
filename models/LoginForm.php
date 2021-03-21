@@ -2,8 +2,8 @@
 
 namespace app\models;
 
-use app\core\Application;
-use app\core\Model;
+use alucardthefish\framvcwork\Application;
+use alucardthefish\framvcwork\Model;
 
 class LoginForm extends Model
 {

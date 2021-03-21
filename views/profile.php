@@ -1,6 +1,6 @@
 <?php
 
-/** @var $this \app\core\View */
+/** @var $this \alucardthefish\framvcwork\View */
 
 $this->title = 'Profile';
 

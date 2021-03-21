@@ -6,12 +6,14 @@
             "email": "sergiop18@gmail.com"
         }
     ],
+    "description": "",
     "autoload": {
         "psr-4": {
             "app\\": "./"
         }
     },
     "require": {
-        "vlucas/phpdotenv": "^5.3"
+        "vlucas/phpdotenv": "^5.3",
+        "alucardthefish/framvcwork-php-core": "^v1.0.1"
     }
 }

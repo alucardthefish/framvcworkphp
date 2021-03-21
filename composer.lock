@@ -4,8 +4,41 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1147ea170f1168dde882522707d7bec1",
+    "content-hash": "a6aaa09c767d75feb77bd56311cb4939",
     "packages": [
+        {
+            "name": "alucardthefish/framvcwork-php-core",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/alucardthefish/framvcwork-php-core.git",
+                "reference": "e05d56df53ea254cc5d79d71877b480fef17522e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/alucardthefish/framvcwork-php-core/zipball/e05d56df53ea254cc5d79d71877b480fef17522e",
+                "reference": "e05d56df53ea254cc5d79d71877b480fef17522e",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "alucardthefish\\framvcwork\\": "."
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Sergio Ortiz Paz",
+                    "email": "sergiop18@gmail.com"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/alucardthefish/framvcwork-php-core/issues",
+                "source": "https://github.com/alucardthefish/framvcwork-php-core/tree/v1.0.1"
+            },
+            "time": "2021-03-21T20:49:46+00:00"
+        },
         {
             "name": "graham-campbell/result-type",
             "version": "v1.0.1",

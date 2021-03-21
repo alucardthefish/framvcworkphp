@@ -8,11 +8,11 @@
 
 namespace app\controllers;
 
-use app\core\Application;
-use app\core\Controller;
+use alucardthefish\framvcwork\Application;
+use alucardthefish\framvcwork\Controller;
 use app\models\LoginForm;
 use app\models\User;
-use app\core\middlewares\AuthMiddleware;
+use alucardthefish\framvcwork\middlewares\AuthMiddleware;
 
 class AuthController extends Controller
 {

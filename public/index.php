@@ -8,7 +8,7 @@
 
 use app\controllers\SiteController;
 use app\controllers\AuthController;
-use app\core\Application;
+use alucardthefish\framvcwork\Application;
 use app\models\User;
 use Dotenv\Dotenv;
 

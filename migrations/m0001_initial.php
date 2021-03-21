@@ -6,7 +6,7 @@
 # Description: Migration initial file 
 # **************************************************************************** 
 
-use app\core\Application;
+use alucardthefish\framvcwork\Application;
 
 class m0001_initial
 {

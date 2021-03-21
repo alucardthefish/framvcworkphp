@@ -8,7 +8,7 @@
 
 namespace app\models;
 
-use app\core\UserModel;
+use alucardthefish\framvcwork\UserModel;
 
 class User extends UserModel {
 
